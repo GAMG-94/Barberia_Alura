@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <center>
+            <main>
+            <form class="formulario">
+                <label for="nombres">Nombres y Apellidos</label>
+                <input id="nombres" type="text">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo">
+                <label for="numero">Número de teléfono</label>
+                <input type="tel" id="numero">
+                <div class="selec">
+                    <label for="radio-t">Teléfono <input id="radio-t" type="radio" name="radio"></label> 
+                    <label for="radio-c">Correo <input id="radio-c" type="radio" name="radio"></label> 
+                    <label for="radio-w">WhatsApp <input id="radio-w" type="radio" name="radio"></label>
+                    
+                </div>
+                <div>
+                    <p class="drop">¿Que horario prefieres que te contactemos?</p>
+                    <select name="" id="drop">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="area" for="area">Mensaje</label>
+                    <textarea name="area" id="area" cols="30" rows="12"></textarea> 
+                    <p class="noti"><input type="checkbox"> Me gustaria recibir notificaciones</p>                
+                    <input type="submit" value="Enviar">
+                </div>
+                
+            </form>
+        </main>
+        </center>
+        
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="">
+            <p class="copyright">&copy; Copyright Barbería Alura - 2023</p>
+        </footer>
+    </body>
+</html>
