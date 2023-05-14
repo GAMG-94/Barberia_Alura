@@ -20,37 +20,38 @@
                 </nav>
             </div>
         </header>
-        
+
         <center>
             <main>
             <form class="formulario">
                 <label for="nombres">Nombres y Apellidos</label>
-                <input id="nombres" type="text">
+                <input id="nombres" type="text" required placeholder="Pepito Peréz">
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo">
+                <input type="email" id="correo" required placeholder="email@dominio.com">
                 <label for="numero">Número de teléfono</label>
-                <input type="tel" id="numero">
-                <div class="selec">
-                    <label for="radio-t">Teléfono <input id="radio-t" type="radio" name="radio"></label> 
+                <input type="tel" id="numero" required placeholder="3121212121">
+
+                <fieldset class="selec">
+                    <label for="radio-t">Teléfono <input id="radio-t" type="radio" name="radio" checked></label> 
                     <label for="radio-c">Correo <input id="radio-c" type="radio" name="radio"></label> 
-                    <label for="radio-w">WhatsApp <input id="radio-w" type="radio" name="radio"></label>
-                    
-                </div>
-                <div>
-                    <p class="drop">¿Que horario prefieres que te contactemos?</p>
+                    <label for="radio-w">WhatsApp <input id="radio-w" type="radio" name="radio"></label>                    
+                </fieldset>
+
+                <fieldset>
+                    <legend class="drop">¿Que horario prefieres que te contactemos?</legend>
                     <select name="" id="drop">
                         <option>Mañana</option>
                         <option>Tarde</option>
                         <option>Noche</option>
                     </select>
-                </div>
+                </fieldset>
+
                 <div>
                     <label class="area" for="area">Mensaje</label>
-                    <textarea name="area" id="area" cols="30" rows="12"></textarea> 
+                    <textarea name="area" id="area" cols="30" rows="12" required></textarea> 
                     <p class="noti"><input type="checkbox"> Me gustaria recibir notificaciones</p>                
                     <input type="submit" value="Enviar">
-                </div>
-                
+                </div>                
             </form>
         </main>
         </center>
